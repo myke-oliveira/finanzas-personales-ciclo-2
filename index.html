@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="col-sm-2 d-none d-sm-block">
-        <button class="btn btn-primary">
+        <button class="btn btn-primary" id="btn-subscribe">
            ¡QUIERO INSCRIBIRME!
         </button>
       </div>
@@ -78,7 +78,7 @@
         mejorar tus finanzas personales con Caroline Sada. ¡Te esperamos!
       </p>
       <div class="bg-dark mx-auto p-5 rounded text-white" style="max-width: 450px">
-        <form action="">
+        <form action="" id="form-subscribe">
           <div class="mb-3">
             <label for="username" class="form-label">Nombre:</label>
             <input type="tel" name="username" id="username" placeholder="Introducir tu nombre..." class="form-control">
@@ -94,5 +94,10 @@
       </div>
     </div>
   </div>
+  <script>
+  document.querySelector("#btn-subscribe").addEventListener("click", function () {
+    document.querySelector("#form-subscribe").scrollIntoView()
+  })
+  </script>
 </body>
 </html>
